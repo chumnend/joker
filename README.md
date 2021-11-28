@@ -20,7 +20,7 @@ Joker is an api used for getting and retrieving jokes
 
 3) Install python dependecies.
   ```
-    pip install -r requirements.txt
+    make install-deps
   ```
 
 4) Start the server.
