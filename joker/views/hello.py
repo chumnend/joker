@@ -4,4 +4,14 @@ from pyramid.response import Response
 
 @view_config(route_name='hello')
 def hello_world(request):
-    return Response('Hello World')
+    name = request.params.get('name', '')
+
+    if name == '':
+        body = 'Hello World'
+    else:
+        body = f'Hello, {name}!'
+
+    return Response(
+        content_type="text/plain",
+        body=body
+    )
