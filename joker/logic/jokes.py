@@ -1,7 +1,7 @@
 import random
 
 
-joke_array = [
+joke_tuples = [
   ("What's the best thing about Switzerland?", "I don't know, but the flag is a big plus."),
   ("I invented a new word!", "Plagiarism!"),
   ("Did you hear about the mathematician who's afraid of negative numbers?", "He'll stop at nothing to avoid them!"),
@@ -11,5 +11,17 @@ joke_array = [
 
 
 def get_random_joke():
-  joke_idx = random.randint(0, len(joke_array) - 1)
-  return joke_array[joke_idx]
+  joke_idx = random.randint(0, len(joke_tuples) - 1)
+  return joke_tuples[joke_idx]
+
+
+def get_all_jokes():
+  jokes = []
+  for (joke, answer) in joke_tuples:
+    jokes.append(
+      {
+        "joke": joke,
+        "answer": answer
+      }
+    )
+  return jokes
