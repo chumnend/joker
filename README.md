@@ -29,7 +29,18 @@ Joker is an api used for getting and retrieving jokes
   ```
 
 ## API Documentation
-TBD
+
+### GET `/v1/joke`
+
+Response:
+```
+{
+  "joke": "What's the best thing about Switzerland?",
+  "answer": "I don't know, but the flag is a big plus."
+}
+```
+
+
 
 ## Contact
 Nicholas Chumney - [nicholas.chumney@outlook.com](nicholas.chumney@outlook.com) 

@@ -11,4 +11,4 @@ start:
 
 .PHONY: test
 test:
-	@pytest
+	@pytest --cov --cov-report=term-missing

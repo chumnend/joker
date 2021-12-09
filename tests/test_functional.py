@@ -1,7 +1,8 @@
-def test_root(testapp):
-    res = testapp.get('/', status=200)
-    assert b'Hello World' in res.body
+def test_joke(testapp):
+    res = testapp.get('/v1/joke', status=200)
+    assert b'joke' in res.body
+    assert b'answer' in  res.body
 
-def test_hello_with_param(testapp):
-    res = testapp.get('/?name=Nicholas', status=200)
-    assert b'Hello, Nicholas' in res.body
+def test_notfound(testapp):
+    res = testapp.get('/badurl', status=404)
+    assert res.status_code == 404

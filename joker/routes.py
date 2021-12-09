@@ -1,2 +1,2 @@
 def includeme(config):
-    config.add_route('hello', '/')
+    config.add_route('random_joke', '/v1/joke')
