@@ -1,3 +1,11 @@
+0.2.0 (2021-12-09)
+==================
+
+
+- added black formatter
+- added pyramid_swagger (not configured to .ini)
+
+
 0.1.0 (2021-12-08)
 ==================
 

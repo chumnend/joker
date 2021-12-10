@@ -9,23 +9,23 @@ with open(os.path.join(here, 'CHANGES.txt')) as f:
     CHANGES = f.read()
 
 requires = [
-    'black',
     'plaster_pastedeploy',
     'pyramid',
-    'pyramid_jinja2',
-    'pyramid_debugtoolbar',
+    'pyramid_swagger',
     'waitress',
 ]
 
-tests_require = [
+dev_require = [
+    'black',
     'WebTest',
+    'pyramid_debugtoolbar',
     'pytest',
     'pytest-cov',
 ]
 
 setup(
     name='joker',
-    version='0.0',
+    version='0.2.0',
     description='joker',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
@@ -34,15 +34,15 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: WSGI :: Application',
     ],
-    author='',
-    author_email='',
+    author='Nicholas Chumney',
+    author_email='nicholas.chumney@outlook.com',
     url='',
     keywords='web pyramid pylons',
     packages=find_packages(exclude=['tests']),
     include_package_data=True,
     zip_safe=False,
     extras_require={
-        'testing': tests_require,
+        'dev': dev_require,
     },
     install_requires=requires,
     entry_points={

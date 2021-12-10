@@ -1,0 +1,41 @@
+swagger: "2.0"
+info:
+  title: "Joker API"
+  description: "Joker is an API used for getting and retrieving jokes"
+  version: "0.2.0"
+
+paths:
+  /v1/surprise:
+    get:
+      operationId: "random_joke"
+      summary: "Returns a random joke"
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: "A JSON object containing a joke and the answer"
+          schema:
+            $ref: '#/definitions/Joke'
+
+  /v1/jokes:
+    get:
+      operationId: list_jokes
+      summary: "Returns list of jokes"     
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: "A list of jokes"
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Joke'
+
+definitions:
+  Joke:
+    type: object
+    properties:
+      joke:
+        type: string
+      answer:
+        type: string
