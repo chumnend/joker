@@ -10,7 +10,7 @@ Joker is an API used for getting and retrieving jokes
 ### Installation
 1) Create new virtual environment, if not created yet.
   ```
-    python -m venv venv
+    python -m virtualenv venv
   ```
 
 2) Activate the newly created virtualenv
@@ -30,7 +30,7 @@ Joker is an API used for getting and retrieving jokes
 
 ## API Documentation
 
-### GET `/v1/surprise` (Get a random joke)
+### GET `/v1/random` (Get a random joke)
 
 Response:
 ```
