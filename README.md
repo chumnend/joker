@@ -1,5 +1,5 @@
 # Joker API
-Joker is an API used for getting and retrieving jokes
+Joker is an API used for getting jokes. This was a quick project, used to get familliar with the Pyramid framework.
 
 ## Getting Started
 
