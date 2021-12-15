@@ -2,12 +2,11 @@ swagger: "2.0"
 info:
   title: "Joker API"
   description: "Joker is an API used for getting and retrieving jokes"
-  version: "0.2.0"
+  version: "0.3.0"
 
 paths:
   /v1/random:
     get:
-      operationId: "random_joke"
       summary: "Returns a random joke"
       responses:
         "200":
@@ -16,7 +15,6 @@ paths:
             $ref: '#/definitions/Joke'
   /v1/jokes:
     get:
-      operationId: list_jokes
       summary: "Returns list of jokes"     
       responses:
         "200":
