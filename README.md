@@ -28,6 +28,17 @@ Joker is an API used for getting jokes. This was a quick project, used to get fa
     make start
   ```
 
+## Useful Commands
+
+### `make test`
+
+Execute all tests and show code coverage.
+
+### `make format`
+
+Execute code formatter to automatically style all code
+
+
 ## API Documentation
 
 ### GET `/v1/random` (Get a random joke)
