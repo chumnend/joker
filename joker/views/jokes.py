@@ -1,10 +1,10 @@
 from pyramid.view import view_config
-from joker.logic.jokes import get_random_joke, get_all_jokes
+from joker.logic import jokes as jokes_logic
 
 
-@view_config(route_name="random", renderer="json")
+@view_config(route_name="random", request_method="GET", renderer="json")
 def random(request):
-    (joke, answer) = get_random_joke()
+    (joke, answer) = jokes_logic.get_random_joke()
 
     return {
         "joke": joke,
@@ -12,8 +12,8 @@ def random(request):
     }
 
 
-@view_config(route_name="jokes", renderer="json")
+@view_config(route_name="jokes", request_method="GET", renderer="json")
 def jokes(request):
-    jokes = get_all_jokes()
+    jokes = jokes_logic.get_all_jokes()
 
     return {"jokes": jokes}

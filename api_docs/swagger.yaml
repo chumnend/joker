@@ -7,7 +7,11 @@ info:
 paths:
   /v1/random:
     get:
+      operationId: random
       summary: "Returns a random joke"
+      tags:
+        - Jokes
+      parameters: []
       responses:
         "200":
           description: "A JSON object containing a joke and the answer"
@@ -15,7 +19,11 @@ paths:
             $ref: '#/definitions/Joke'
   /v1/jokes:
     get:
-      summary: "Returns list of jokes"     
+      operationId: get_jokes
+      summary: "Returns list of jokes"
+      tags:
+        - Jokes 
+      parameters: [] 
       responses:
         "200":
           description: "A list of jokes"
