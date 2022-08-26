@@ -82,9 +82,7 @@ Response:
 ```
 
 ## Deployment
-API is currently deployed on Heroku.
-
-See [Pyramid Heroku Guide](https://docs.pylonsproject.org/projects/pyramid-cookbook/en/latest/deployment/heroku.html)
+API is not deployed.
 
 ## Contact
 Nicholas Chumney - [nicholas.chumney@outlook.com](nicholas.chumney@outlook.com) 
