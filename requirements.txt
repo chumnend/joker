@@ -51,7 +51,7 @@ translationstring==1.4
 typing_extensions==4.0.1
 uri-template==1.1.0
 venusian==3.0.0
-waitress==2.0.0
+waitress==2.1.2
 webcolors==1.11.1
 WebOb==1.8.7
 WebTest==3.0.0
