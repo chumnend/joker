@@ -23,9 +23,14 @@ Joker is an API used for getting jokes. This was a quick project, used to get fa
     make install-deps
   ```
 
-4) Start the server.
+4) Start the development server.
   ```
     make start
+  ```
+
+5) Start the production server.
+  ```
+  ./run
   ```
 
 ## Useful Commands
